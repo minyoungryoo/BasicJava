@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Application {
+
+	public static void main(String[] args) {
+//		String[] lallaa = {"ban", "ana"};
+//		for(String octopus: lallaa){
+//			System.out.println(octopus);
+//		}
+		int [][] grid = {
+				{3, 5, 2323},
+				{2, 4},
+				{1, 2, 3, 4}
+		};
+		
+		System.out.println(grid[1]);
+		
+//		for(int i=0; i<grid.length; i++){
+//			for(int j=0; j<grid[i].length; j++){
+//				System.out.println(grid[i][j] + "\t");
+//			}
+//			System.out.println();
+//		}
+	}
+
+}

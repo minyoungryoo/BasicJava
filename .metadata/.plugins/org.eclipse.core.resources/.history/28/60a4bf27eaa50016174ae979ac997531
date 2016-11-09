@@ -1,0 +1,39 @@
+class Dog{
+	String name;
+	int age;
+	
+	void intro(){
+		System.out.println("Hello");
+	}
+	
+	public static int count = 0;
+	
+	public int id;
+	
+	public Dog() {
+		id = count;
+		count ++;
+	}
+	
+	public void showInfo(){
+		System.out.println("Object ID: " + id + ", Name:" + name);
+	}
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+//		String[] lallaa = {"ban", "ana"};
+//		for(String octopus: lallaa){
+//			System.out.println(octopus);
+//		}
+		
+		Dog dog1 = new Dog();
+		dog1.age = 21;
+		dog1.name = "Harry";
+//		dog1.intro();
+		
+		dog1.showInfo();
+	}
+
+}

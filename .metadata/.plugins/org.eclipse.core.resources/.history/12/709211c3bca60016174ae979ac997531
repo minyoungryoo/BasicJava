@@ -1,0 +1,10 @@
+
+public class Plant {
+	public String name;
+	
+	public static final int ID = 3; 
+	
+	public Plant(){
+		name = "Plumb";
+	}
+}
