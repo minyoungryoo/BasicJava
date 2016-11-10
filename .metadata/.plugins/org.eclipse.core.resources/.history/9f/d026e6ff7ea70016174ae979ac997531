@@ -34,14 +34,10 @@ public class Application {
 			showList(list);
 			
 			Machine machine1 = new Machine(){
-				public void start(){
+				@Override public void start(){
 					System.out.println("New machine starting ...");
 				}
 			};
-			machine1.start();
-			
-			Machine machine2 = new Machine();
-			machine2.start();
 	}
 	
 	public static void showList(ArrayList<? super Camera> list) {

@@ -12,8 +12,4 @@ public class Machine implements Info {
 		System.out.println("Machine ID is " + id);
 	}
 	
-	public String toString(){
-		return "I am a machine";
-	}
-	
 }

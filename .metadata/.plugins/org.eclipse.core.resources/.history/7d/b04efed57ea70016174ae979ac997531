@@ -38,17 +38,13 @@ public class Application {
 					System.out.println("New machine starting ...");
 				}
 			};
-			machine1.start();
-			
-			Machine machine2 = new Machine();
-			machine2.start();
 	}
 	
 	public static void showList(ArrayList<? super Camera> list) {
 		for(Object value: list){
 			System.out.println(value);
-//			value.start();
-//			value.camStart();
+			value.start();
+			value.camStart();
 		}
 	}
 
