@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 class Camera extends Machine {
-	public static void camStart() {
+	public static void camStart(){
 		System.out.println("Camera starting");
 	}
 }
@@ -12,44 +12,45 @@ public class Application {
 		Machine mac1 = new Machine();
 		mac1.start();
 		mac1.stop();
-
+		
 		Person person1 = new Person("Harry");
 		person1.greet();
-
+		
 		Info info1 = new Machine();
 		info1.showInfo();
 
 		Plant plant = new Plant();
 		System.out.println(plant.name);
 		System.out.println(plant.ID);
-
-		byte byteValue = (byte) 133;
+		
+		byte byteValue = (byte)133;
 		System.out.println(byteValue);
-
-		ArrayList<Machine> list = new ArrayList<Machine>();
-
-		list.add(new Machine());
-		list.add(new Machine());
-
-		showList(list);
-
-		Machine machine1 = new Machine() {
-			public void start() {
-				System.out.println("New machine starting ...");
-			}
-		};
-		machine1.start();
-
-		Machine machine2 = new Machine();
-		machine2.start();
+		
+			ArrayList<Machine> list = new ArrayList<Machine>();
+			
+			list.add(new Machine());
+			list.add(new Machine());
+			
+			showList(list);
+			
+			Machine machine1 = new Machine(){
+				public void start(){
+					System.out.println("New machine starting ...");
+				}
+			};
+			machine1.start();
+			
+			Machine machine2 = new Machine();
+			machine2.start();
 	}
-
+	
 	public static void showList(ArrayList<? super Camera> list) {
-		for (Object value : list) {
+		for(Object value: list){
 			System.out.println(value);
-			// value.start();
-			// value.camStart();
+//			value.start();
+//			value.camStart();
 		}
 	}
 
 }
+

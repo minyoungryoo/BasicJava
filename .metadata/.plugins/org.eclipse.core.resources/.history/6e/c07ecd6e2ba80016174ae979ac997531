@@ -15,16 +15,16 @@ public class App {
 		Fish fish = new Fish();
 		Seaweed weed = new Seaweed();
 		
-//		Test test = new Test();
-//		try {
-//			test.input();
-//		} catch (FileNotFoundException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (ParseException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		Test test = new Test();
+		try {
+			test.input();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
